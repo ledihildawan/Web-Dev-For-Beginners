@@ -184,6 +184,8 @@ You've now seen we have three ways to pass a function as a parameter and might b
 
 Can you articulate in one sentence the difference between functions and methods? Give it a try!
 
+A function is a reusable block of code that operates independently, while a method is a function that is associated with an object and typically acts on that object.
+
 ## Post-Lecture Quiz
 [Post-lecture quiz](https://ashy-river-0debb7803.1.azurestaticapps.net/quiz/10)
 
