@@ -7,9 +7,11 @@ Your first task would be to identify this site, detail the ways in which you thi
 
 ## Table to test site accessibility
 
-| Criteria | Exemplary | Adequate | Need to Improve |
-|----------|-----------|----------|----------------|
+| Criteria | Exemplary                        | Adequate                        | Need to Improve                 |
+| -------- | -------------------------------- | ------------------------------- | ------------------------------- |
 |          | missing <10% of what is required | missing 20% of what is required | missing 50% of what is required |
 
 ----
 Student Report: includes paragraphs on how inaccessible the site is, the Lighthouse report captured in pdf, a list of ten points to improve, with details on how to improve it
+
+[Ledi Hildawan - Website Accessibility Analysis](https://chatgpt.com/share/686129da-873c-8013-a4b3-a3dafeccdd76)

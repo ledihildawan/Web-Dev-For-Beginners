@@ -217,12 +217,87 @@ Take this HTML and rewrite it to be as accessible as possible, given the strateg
 </html>
 ```
 
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Turtle Ipsum – The World's Premier Turtle Fan Club</title>
+  <link href="../assets/style.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+  <header class="site-header" role="banner">
+    <h1 class="site-title">Turtle Ipsum</h1>
+    <p class="site-subtitle" aria-label="Site Description">The World's Premier Turtle Fan Club</p>
+  </header>
+
+  <nav class="main-nav" aria-label="Main navigation">
+    <h2 class="nav-header visually-hidden">Resources</h2>
+    <ul class="nav-list">
+      <li class="nav-item nav-item-bull">
+        <a href="https://www.youtube.com/watch?v=CMNry4PE93Y" target="_blank" rel="noopener noreferrer">
+          "I like turtles" (YouTube)
+        </a>
+      </li>
+      <li class="nav-item nav-item-bull">
+        <a href="https://en.wikipedia.org/wiki/Turtle" target="_blank" rel="noopener noreferrer">
+          Basic Turtle Info
+        </a>
+      </li>
+      <li class="nav-item nav-item-bull">
+        <a href="https://en.wikipedia.org/wiki/Turtles_(chocolate)" target="_blank" rel="noopener noreferrer">
+          Chocolate Turtles
+        </a>
+      </li>
+    </ul>
+  </nav>
+
+  <main class="main-content" role="main">
+    <article aria-labelledby="welcome-title">
+      <h2 id="welcome-title" class="page-title">Welcome to Turtle Ipsum</h2>
+      <p>
+        <a href="#" aria-label="Learn more about Turtle Ipsum">Click here</a> to learn more.
+      </p>
+      <p class="article-text">
+        Turtle ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+        Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+      </p>
+    </article>
+  </main>
+
+  <footer class="footer" role="contentinfo">
+    <section class="footer-section">
+      <button type="button" class="button">Sign up for turtle news</button>
+    </section>
+
+    <section class="footer-section" aria-labelledby="internal-pages-title">
+      <h2 id="internal-pages-title" class="footer-title">Internal Pages</h2>
+      <ul class="nav-list">
+        <li class="nav-item nav-item-bull"><a href="../">Home</a></li>
+        <li class="nav-item nav-item-bull"><a href="../semantic">Semantic Example</a></li>
+      </ul>
+    </section>
+
+    <p class="footer-copyright">
+      &copy; <time datetime="2016">2016</time> Instrument
+    </p>
+  </footer>
+</body>
+</html>
+
+```
+
 ## Post-Lecture Quiz
 [Post-lecture quiz](https://ashy-river-0debb7803.1.azurestaticapps.net/quiz/6)
 
 ## Review & Self Study
 
 Many governments have laws regarding accessibility requirements. Read up on your home country's accessibility laws. What is covered, and what isn't? An example is [this government web site](https://accessibility.blog.gov.uk/).
+
+[Undang-Undang Aksesibilitas Indonesia](https://chatgpt.com/share/6861288b-8e6c-8013-b328-18cb6bc75485)
 
 ## Assignment
  
