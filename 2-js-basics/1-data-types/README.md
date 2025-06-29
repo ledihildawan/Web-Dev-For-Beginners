@@ -157,7 +157,7 @@ myString1 + ", " + myString2 + "!"; //Hello, World!
 
 ```
 
-✅ Why does `1 + 1 = 2` in JavaScript, but `'1' + '1' = 11?` Think about it. What about `'1' + 1`?
+✅ Why does `1 + 1 = 2` in JavaScript, but `'1' + '1' = 11?` Think about it. What about `'1' + 1`? In JavaScript, the `+` operator is also used for string concatenation. When used between two strings, it **joins them together**. It's not doing math — it's just sticking the two string characters together.
 
 **Template literals** are another way to format strings, except instead of quotes, the backtick  is used. Anything that is not plain text must be placed inside placeholders `${ }`. This includes any variables that may be strings.
 
@@ -173,6 +173,9 @@ You can achieve your formatting goals with either method, but template literals 
 
 ✅ When would you use a template literal vs. a plain string?
 
+Use template literals when: You’re building a string that includes variables, expressions, or multiple lines.
+Use plain strings when: You’re just writing static or simple text.
+
 ### Booleans
 
 Booleans can be only two values: `true` or `false`. Booleans can help make decisions on which lines of code should run when certain conditions are met. In many cases, [operators](#arithmetic-operators) assist with setting the value of a Boolean and you will often notice and write variables being initialized or their values being updated with an operator.
@@ -186,7 +189,9 @@ Booleans can be only two values: `true` or `false`. Booleans can help make decis
 
 ## 🚀 Challenge
 
-JavaScript is notorious for its surprising ways of handling datatypes on occasion. Do a bit of research on these 'gotchas'. For example: case sensitivity can bite! Try this in your console: `let age = 1; let Age = 2; age == Age` (resolves `false` -- why?). What other gotchas can you find?
+JavaScript is notorious for its surprising ways of handling datatypes on occasion. Do a bit of research on these 'gotchas'. For example: case sensitivity can bite! Try this in your console: `let age = 1; let Age = 2; age == Age` (resolves `false` -- why?). What other gotchas can you find? JavaScript is case-sensitive, so **age** and **Age** are **two different variables**. This can easily cause bugs if you mix up capital letters.
+
+[JS Gotchas Explained](https://chatgpt.com/share/68612fc8-a8ac-8013-96ec-3e82947ca07e)
 
 ## Post-Lecture Quiz
 [Post-lecture quiz](https://ashy-river-0debb7803.1.azurestaticapps.net/quiz/8)
