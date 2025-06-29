@@ -42,6 +42,38 @@ Operators are used to evaluate conditions by making comparisons that will create
 
 ✅ Check your knowledge by writing some comparisons in your browser's console. Does any returned data surprise you?
 
+```js
+// 1. Number vs String
+console.log(1 == '1');     // true (type coercion)
+console.log(1 === '1');    // false (strict comparison)
+
+// 2. null vs undefined
+console.log(null == undefined);  // true
+console.log(null === undefined); // false
+
+// 3. false vs 0
+console.log(false == 0);   // true
+console.log(false === 0);  // false
+
+// 4. NaN comparisons
+console.log(NaN == NaN);   // false (NaN is never equal to anything, even itself)
+console.log(isNaN(NaN));   // true
+
+// 5. Weird coercions
+console.log([] == 0);      // true
+console.log('' == 0);      // true
+console.log([] == '');     // true
+console.log([] == false);  // true
+
+// 6. Objects and arrays
+console.log({} == {});     // false (different references)
+console.log([] == []);     // false (different references)
+
+// 7. true and string
+console.log(true == '1');  // true
+console.log(true === '1'); // false
+```
+
 ## If Statement
 
 The if statement will run code in between its blocks if the condition is true.
@@ -83,6 +115,17 @@ if (currentMoney >= laptopPrice) {
 
 ✅ Test your understanding of this code and the following code by running it in a browser console. Change the values of the currentMoney and laptopPrice variables to change the returned `console.log()`.
 
+```js
+let currentMoney = 1000;
+let laptopPrice = 1200;
+
+if (currentMoney >= laptopPrice) {
+  console.log("Getting a new laptop!");
+} else {
+  console.log("Can't afford a new laptop, yet!");
+}
+```
+
 ## Switch Statement
 
 The `switch` statement is used to perform different actions based on different conditions. Use the `switch` statement to select one of many code blocks to be executed.
@@ -119,6 +162,24 @@ console.log(`The value is ${a}`);
 ```
 
 ✅ Test your understanding of this code and the following code by running it in a browser console. Change the values of the variable a to change the returned `console.log()`.
+
+```js
+let a = 'b';
+
+switch (a) {
+  case 1:
+    a = "one";
+    break;
+  case 2:
+    a = "two";
+    break;
+  default:
+    a = "not found";
+    break;
+}
+
+console.log(`The value is ${a}`);
+```
 
 ## Logical Operators and Booleans
 
@@ -176,7 +237,7 @@ let secondNumber = 10;
 let biggestNumber = firstNumber > secondNumber ? firstNumber : secondNumber;
 ```
 
-✅ Take a minute to read this code a few times. Do you understand how these operators are working?
+✅ Take a minute to read this code a few times. Do you understand how these operators are working? Yes.
 
 The above states that
 
@@ -201,6 +262,30 @@ if (firstNumber > secondNumber) {
 
 Create a program that is written first with logical operators, and then rewrite it using a ternary expression. What's your preferred syntax?
 
+
+### Using Logical Operators (if/else with `&&`, `||`)
+```js
+let age = 20;
+let hasTicket = true;
+
+if (age >= 18 && hasTicket) {
+  console.log("You can enter the concert.");
+} else {
+  console.log("Sorry, you can't enter.");
+}
+```
+
+### Rewriting with a Ternary Operator
+```js
+let age = 20;
+let hasTicket = true;
+
+let message = (age >= 18 && hasTicket)
+  ? "You can enter the concert."
+  : "Sorry, you can't enter.";
+
+console.log(message);
+```
 ---
 
 ## Post-Lecture Quiz
