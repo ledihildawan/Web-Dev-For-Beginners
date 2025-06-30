@@ -66,6 +66,14 @@ iceCreamFlavors.length; //5
 
 ✅ Try it yourself! Use your browser's console to create and manipulate an array of your own creation.
 
+```js
+let fruits = ["apple", "banana", "cherry"];
+fruits.push("orange");
+fruits.pop();
+console.log(fruits);
+console.log(fruits[1]);
+```
+
 ## Loops
 
 Loops allow us to perform repetitive or **iterative** tasks, and can save a lot of time and code. Each iteration can vary in their variables, values, and conditions. There are different types of loops in JavaScript, and they all have small differences, but essentially do the same thing: loop over data.
@@ -85,6 +93,12 @@ for (let i = 0; i < 10; i++) {
 ```
 
 ✅ Run this code in a browser console. What happens when you make small changes to the counter, condition, or iteration expression? Can you make it run backwards, creating a countdown?
+
+```js
+for (let i = 10; i > 0; i--) {
+  console.log(i);
+}
+```
 
 ### While loop
 
@@ -115,11 +129,33 @@ for (let i = 0; i < iceCreamFlavors.length; i++) {
 
 ✅ Experiment with looping over an array of your own making in your browser's console. 
 
+```js
+const fruits = ['apple', 'banana', 'cherry', 'date'];
+
+for (let i = 0; i < fruits.length; i++) {
+  console.log(`Fruit ${i + 1}: ${fruits[i]}`);
+}
+```
+
 ---
 
 ## 🚀 Challenge
 
 There are other ways of looping over arrays other than for and while loops. There are [forEach](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Array/forEach), [for-of](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Statements/for...of), and [map](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Array/map). Rewrite your array loop using one of these techniques.
+
+```js
+for (const fruit of fruits) {
+  console.log(`I like ${fruit}`);
+}
+
+fruits.forEach((fruit, index) => {
+  console.log(`Index ${index} is ${fruit}`);
+});
+
+fruits.map((fruit, index) => {
+  console.log(`Mapping fruit #${index + 1}: ${fruit}`);
+});
+```
 
 ## Post-Lecture Quiz
 [Post-lecture quiz](https://ashy-river-0debb7803.1.azurestaticapps.net/quiz/14)

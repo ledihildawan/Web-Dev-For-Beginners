@@ -11,3 +11,13 @@ Create a program that lists every 3rd number between 1-20 and prints it to the c
 | Criteria | Exemplary                               | Adequate                 | Needs Improvement              |
 | -------- | --------------------------------------- | ------------------------ | ------------------------------ |
 |          | Program runs correctly and is commented | Program is not commented | Program is incomplete or buggy |
+
+```js
+const lists = [];
+
+for (let i = 1; i <= 20; i += 3) {
+  lists.push(i);
+}
+
+console.log(lists);
+```
